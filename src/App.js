@@ -1,7 +1,14 @@
 import "./App.css";
+import Nav from "./components/NavBar/NavBar";
+import Parallax from "./components/Parallax/Parallax";
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="relative">
+      <Nav />
+      <Parallax />
+    </div>
+  )
 }
 
 export default App;
