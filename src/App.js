@@ -1,17 +1,16 @@
-import "./App.css";
-import Home from "./components/Home/Home";
-import Nav from "./components/NavBar/NavBar";
-import { ParallaxProvider } from 'react-scroll-parallax';
-import Footer from "./components/Footer/Footer";
+import './App.css'
+import Home from './components/Home/Home'
+import Nav from './components/NavBar/NavBar'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
-    <ParallaxProvider>
+    <div>
       <Nav />
       <Home />
       <Footer />
-    </ParallaxProvider>
+    </div>
   )
 }
 
-export default App;
+export default App
