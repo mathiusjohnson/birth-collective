@@ -3,41 +3,38 @@ import React from 'react';
 const DesktopNav = () => {
   return (
     <div className="hidden md:block">
-      <div className="ml-10 flex items-baseline space-x-4">
-        <a
-          href="#"
-          className="text-black hover:bg-gray-700  hover:text-white  px-3 py-2 rounded-md text-sm font-medium"
-        >
-          Dashboard
-        </a>
+      <div className="flex items-baseline justify-between">
 
         <a
-          href="#"
-          className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          href="/"
+          className="text-black hhover:text-gray-500  px-3 py-2 rounded-md text-xl uppercase font-semibold"
         >
-          Team
+          Squamish Doula Collective
         </a>
 
-        <a
-          href="#"
-          className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-        >
-          Projects
-        </a>
+        <div>
+          <a
+            href="/"
+            className="text-black hover:text-gray-500 px-3 py-2 rounded-md text-xl uppercase font-semibold"
+          >
+            About
+          </a>
 
-        <a
-          href="#"
-          className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-        >
-          Calendar
-        </a>
+          <a
+            href="/"
+            className="text-black hover:text-gray-500 px-3 py-2 rounded-md text-xl uppercase font-semibold"
+          >
+            Meet Us
+          </a>
 
-        <a
-          href="#"
-          className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-        >
-          Reports
-        </a>
+          <a
+            href="/"
+            className="text-black hover:text-gray-500 px-3 py-2 rounded-md text-xl uppercase font-semibold"
+          >
+            Connect
+          </a>
+        </div>
+
       </div>
     </div>
   );
