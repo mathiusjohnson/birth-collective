@@ -1,15 +1,26 @@
-import React from 'react';
-import parallaxImage from '../../assets/images/parallax-image.jpg';
-import styles from './ParallaxStyles.css'
+import React, { useEffect, useRef } from 'react'
+import BioList from '../BioList/BioList'
+import { handleScroll } from './parallaxHelpers'
+import './ParallaxStyles.css'
 
-console.log(styles);
 const Parallax = () => {
-  return (
-    <div className="">
-        <img className="fixed top-0 left-0 h-1-1/2" src={parallaxImage} alt=' parallax imaage' />
-      
-    </div>
-  );
-};
+  const parallaxRef = useRef()
 
-export default Parallax;
+  useEffect(() => {
+    if (typeof window != 'undefined') {
+      // needed if SSR
+
+      window.addEventListener('scroll', () => {
+        handleScroll(parallaxRef, window)
+      })
+    }
+  }, [])
+
+  return (
+    <div ref={parallaxRef} className='parallax  -mt-12'>
+      <BioList />
+    </div>
+  )
+}
+
+export default Parallax
