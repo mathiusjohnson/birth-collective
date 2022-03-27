@@ -1,5 +1,7 @@
 .parallax {
   background-image: url('/src/assets/images/parallax-image.jpg');
   background-size: cover;
-  margin-left: -25%;
+  /* margin-left: -25%; */
+  background-position: left;
+  height: max-content;
 }
