@@ -3,7 +3,7 @@ import BioListItem from './BioListItem'
 
 const BioList = () => {
   return (
-    <div className='absolute top-0 z-10 mt-12 max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 left-0 right-0'>
+    <div className='z-10 mt-12 pt-12 py-1 px-4 sm:px-6 lg:px-8 mx-12 sm:mx-16 md:mx-20 lg:mx-24 xl:mx-28 '>
       <BioListItem />
       <BioListItem />
       <BioListItem />
